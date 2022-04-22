@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  caching:
+    image: bitnami/redis:6.0.16
+    restart: always
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - ./Core/src/data/redis:/bitnami/redis/data
+    ports:
+      - "6379:6379"
+  postgres:
+    image: docker.io/bitnami/postgresql:11
+    volumes:
+      - ./Core/src/db:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      - POSTGRESQL_USERNAME=postgres
+      - POSTGRESQL_DATABASE=tiendita
+      - ALLOW_EMPTY_PASSWORD=yes
+      - POSTGRESQL_PASSWORD=marihuana
+  
