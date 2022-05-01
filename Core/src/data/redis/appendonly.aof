@@ -1,0 +1,123 @@
+*2
+$6
+SELECT
+$1
+0
+*3
+$3
+SET
+$11
+{"id":"10"}
+$58
+[{"id":10,"name":"Ryan Burns","age":21,"city":"New York"}]
+*3
+$3
+SET
+$10
+{"id":"5"}
+$56
+[{"id":5,"name":"Jack Ryan","age":31,"city":"New York"}]
+*3
+$3
+SET
+$10
+{"id":"7"}
+$56
+[{"id":7,"name":"Bruce Wayne","age":21,"city":"Gotham"}]
+*3
+$3
+SET
+$10
+{"id":"9"}
+$60
+[{"id":9,"name":"Jimmy Olsen","age":21,"city":"Metropolis"}]
+*1
+$7
+FLUSHDB
+*3
+$3
+SET
+$10
+{"id":"3"}
+$55
+[{"id":3,"name":"Tom Hanks","age":47,"city":"Detroit"}]
+*3
+$3
+SET
+$10
+{"id":"9"}
+$60
+[{"id":9,"name":"Jimmy Olsen","age":21,"city":"Metropolis"}]
+*3
+$3
+SET
+$10
+{"id":"5"}
+$56
+[{"id":5,"name":"Jack Ryan","age":31,"city":"New York"}]
+*2
+$6
+SELECT
+$1
+0
+*3
+$3
+SET
+$2
+{}
+$561
+[{"id":1,"name":"Alan Wake","age":21,"city":"New York"},{"id":2,"name":"Steve Rogers","age":106,"city":"Chicago"},{"id":3,"name":"Tom Hanks","age":47,"city":"Detroit"},{"id":4,"name":"Ryan Burns","age":16,"city":"New York"},{"id":5,"name":"Jack Ryan","age":31,"city":"New York"},{"id":6,"name":"Clark Kent","age":34,"city":"Metropolis"},{"id":7,"name":"Bruce Wayne","age":21,"city":"Gotham"},{"id":8,"name":"Tim Drake","age":21,"city":"Gotham"},{"id":9,"name":"Jimmy Olsen","age":21,"city":"Metropolis"},{"id":10,"name":"Ryan Burns","age":21,"city":"New York"}]
+*3
+$3
+SET
+$11
+{"id":"11"}
+$2
+[]
+*3
+$3
+SET
+$11
+{"id":"13"}
+$2
+[]
+*3
+$3
+SET
+$11
+{"id":"14"}
+$2
+[]
+*3
+$3
+SET
+$11
+{"id":"15"}
+$2
+[]
+*3
+$3
+SET
+$10
+{"id":"1"}
+$56
+[{"id":1,"name":"Alan Wake","age":21,"city":"New York"}]
+*3
+$3
+SET
+$10
+{"id":"4"}
+$57
+[{"id":4,"name":"Ryan Burns","age":16,"city":"New York"}]
+*2
+$6
+SELECT
+$1
+0
+*3
+$3
+SET
+$3
+SSD
+$276
+{"items":[{"id":10,"name":"SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s","price":109,"category":"electronics","count":470},{"id":11,"name":"Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5","price":109,"category":"electronics","count":319}]}

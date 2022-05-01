@@ -18,4 +18,6 @@ services:
       - POSTGRESQL_DATABASE=tiendita
       - ALLOW_EMPTY_PASSWORD=yes
       - POSTGRESQL_PASSWORD=marihuana
+    ports:
+      - "5432:5432"
   
