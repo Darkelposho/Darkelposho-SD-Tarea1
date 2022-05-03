@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors')
 const bodyParser = require('body-parser')
 const dotenv = require('dotenv')
-const axios = require('axios');
+const grpc = require('./grpc_client');
 const { createClient } = require("redis");
 
 const app = express();
@@ -12,12 +12,15 @@ app.use(bodyParser.urlencoded({ extended: true }))
 dotenv.config()
 
 var port = process.env.PORT || 3000;
-var ip = process.env.PORT || 'localhost';
 
 const clientredis = createClient({
-  host: process.env.REDIS_HOST,   
-  port: 6379
+  url: 'redis://redis:6379'
 });
+
+clientredis.on('error', (err) => console.log('Redis Client Error', err));
+
+
+
 
   app.get('/', (req, res) => {
     res.send('Hello World!');
@@ -32,18 +35,16 @@ const clientredis = createClient({
         return res.send(JSON.parse(reply))
       }else{
         console.log("getting data from grpc");
-        axios.get('http://localhost:8000/inventory',
-         {
-           params: {
-              name: variable
-             }
-          }).then(resi => {
-            console.log(resi.data);
-            clientredis.set(variable, JSON.stringify(resi.data));
-            res.json(resi.data);
-          }).catch(err => {
-            //console.log(err);
+        if(variable){
+          grpc.GetItem({name: variable}, (err, response) => {
+          if(err){
+          console.log(err);
+          res.json({})
+          }else{ 
+          res.json(response);
+          }
           })
+        }
       }
     })();
   });
@@ -51,7 +52,7 @@ const clientredis = createClient({
 async function main() {
   try {
     await clientredis.connect();
-    app.listen(port, ip, function () {
+    app.listen(port, function () {
       console.log('Server running on port ' + port);
     }); 
   } catch (error) {

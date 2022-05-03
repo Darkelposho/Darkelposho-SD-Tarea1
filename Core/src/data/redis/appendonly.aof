@@ -121,3 +121,15 @@ $3
 SSD
 $276
 {"items":[{"id":10,"name":"SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s","price":109,"category":"electronics","count":470},{"id":11,"name":"Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5","price":109,"category":"electronics","count":319}]}
+*2
+$6
+SELECT
+$1
+0
+*3
+$3
+SET
+$3
+key
+$5
+value

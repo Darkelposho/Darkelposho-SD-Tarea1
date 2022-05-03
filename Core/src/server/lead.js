@@ -1,6 +1,5 @@
 const express = require("express");
 const cors = require("cors");
-const grpc = require('../client/grpc_client');
 const server = require('./grpc_server')
 server.server();
 
@@ -10,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get('/inventory', async (req, res) => {
+/*app.get('/inventory', async (req, res) => {
     const variable = req.query.name;
     try {
         if(variable){
@@ -26,7 +25,7 @@ app.get('/inventory', async (req, res) => {
     } catch (error) {
         console.log(error);
     }
-});
+});*/
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
