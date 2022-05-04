@@ -1,10 +1,10 @@
 ﻿# Darkelposho-SD-Tarea1
-#Instrucciones de uso
-Instalar Archivos del github 
-Dirigirse a la carpeta Tarea1 en un terminal
-Escribir en la terminal ```Docker-compose up```
-Dirigirse a la dirección `localhost:3000/inventory/search` 
-En el buscador escribir lo que se busca, como por ejemplo  `localhost:3000/inventory/search?q=SSD`
+# Instrucciones de uso
+1. Instalar Archivos del github 
+2. Dirigirse a la carpeta Tarea1 en un terminal
+3. Escribir en la terminal ```Docker-compose up```
+4. Dirigirse a la dirección `localhost:3000/inventory/search` 
+5. En el buscador escribir lo que se busca, como por ejemplo  `localhost:3000/inventory/search?q=SSD`
  
 # Configuracion de Redis
 Para configurar el cache en redis se utilizó el comando especial CONFIG SET, este comando permite realizarla mientras se encuentra funcionando el servidor. Para configurar el cache con una memoria de 5mb y con protocolo de remoción LRU se realizan los siguientes pasos.
