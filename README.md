@@ -21,6 +21,6 @@ CONFIG SET maxmemory-policy allkeys-lfu
 # Comparación de LRU y LFU
 Las diferencias principales entre lru y lfu se pueden resumir, en que lru almacena las llaves con un dato de orden, eliminando siempre la más antigua, por lo que si existe una gran variedad de entradas, no necesariamente vaya a ser util. En cambio lfu esta orientado a almacenar las llaves dependiendo de la cantidad de veces que son accesadas, por lo que elminaria constantemente la llave menos accesada en la cache. El problema para este protocolo seria que se llene el cache, y luego se ingresen llaves con una gran variedad por lo que eliminaria siempre la última entrada.
 
-#Estudiantes 
+# Estudiantes 
 * Guillermo Correa
 * Alejandro Alvarez 
