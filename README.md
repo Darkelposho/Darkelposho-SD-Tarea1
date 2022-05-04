@@ -1,6 +1,6 @@
 ﻿# Darkelposho-SD-Tarea1
 # Instrucciones de uso
-1. Instalar Archivos del github 
+1. Descargar e instalar Archivos del github 
 2. Dirigirse a la carpeta Tarea1 en un terminal
 3. Escribir en la terminal ```Docker-compose up```
 4. Dirigirse a la dirección `localhost:3000/inventory/search` 
