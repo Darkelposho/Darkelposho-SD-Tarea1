@@ -1,4 +1,4 @@
-﻿# Darkelposho-SD-Tarea1
+﻿# SD-Tarea1
 # Instrucciones de uso
 1. Descargar e instalar Archivos del github 
 2. Dirigirse a la carpeta Tarea1 en un terminal
